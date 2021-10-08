@@ -1,4 +1,6 @@
+## Ignore Mac DS_Store files and .exe compiled from c#
 **/.DS_Store
+**/.exe
 
 ############## C# ###########
 ## Ignore Visual Studio temporary files, build results, and
