@@ -11,7 +11,7 @@ class Problem
     {
     }
 
-    function printResult()
+    function printResult(): void
     {
         $this->printHeader();
 
@@ -20,7 +20,7 @@ class Problem
         echo "Amount by Length of Name: {$this->getAmountByLengthOfName()}\n";
     }
 
-    private function printHeader()
+    private function printHeader(): void
     {
         echo "The result is:\n";
     }

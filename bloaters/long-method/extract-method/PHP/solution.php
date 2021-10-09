@@ -11,21 +11,21 @@ class Solution
     {
     }
 
-    function printResult()
+    function printResult(): void
     {
         $this->printHeader();
-        $this->printDetails();
+        $this->printDetails($this->getAmountByLengthOfName());
     }
 
-    private function printHeader()
+    private function printHeader(): void
     {
         echo "The result is:\n";
     }
 
-    private function printDetails()
+    private function printDetails($amountByLengthOfName): void
     {
         echo "Name: {$this->name}\n";
-        echo "Amount by Length of Name: {$this->getAmountByLengthOfName()}\n";
+        echo "Amount by Length of Name: {$amountByLengthOfName}\n";
     }
 
     private function getAmountByLengthOfName()

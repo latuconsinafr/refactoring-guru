@@ -7,7 +7,7 @@ include 'solution.php';
 
 class App
 {
-    function run()
+    function run(): void
     {
         $problem = new Problem();
         $solution = new Solution();

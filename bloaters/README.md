@@ -1,6 +1,6 @@
 # Bloaters
 
-This folders contains all the Code smells with Bloaters Category
+This folder contains all the Code smells with Bloaters Category
 
 ## Long Method
 
