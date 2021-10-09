@@ -4,18 +4,18 @@ export class Solution {
 
   constructor() {}
 
-  public printResult() {
+  public printResult(): void {
     this.printHeader();
-    this.printDetails();
+    this.printDetails(this.getAmountByLengthOfName());
   }
 
-  private printHeader() {
+  private printHeader(): void {
     console.log("The result is:");
   }
 
-  private printDetails() {
+  private printDetails(amountByLengthOfName: number): void {
     console.log("Name: ", this.name);
-    console.log("Amount by Length of Name: ", this.getAmountByLengthOfName());
+    console.log("Amount by Length of Name: ", amountByLengthOfName);
   }
 
   private getAmountByLengthOfName(): number {

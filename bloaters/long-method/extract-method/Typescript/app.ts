@@ -2,7 +2,7 @@ import { Problem } from "./problem";
 import { Solution } from "./solution";
 
 class App {
-  run() {
+  run(): void {
     let problem = new Problem();
     let solution = new Solution();
 

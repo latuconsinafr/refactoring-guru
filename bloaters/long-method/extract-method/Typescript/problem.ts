@@ -4,7 +4,7 @@ export class Problem {
 
   constructor() {}
 
-  public printResult() {
+  public printResult(): void {
     this.printHeader();
 
     // Print details
@@ -12,7 +12,7 @@ export class Problem {
     console.log("Amount by Length of Name: ", this.getAmountByLengthOfName());
   }
 
-  private printHeader() {
+  private printHeader(): void {
     console.log("The result is:");
   }
 
