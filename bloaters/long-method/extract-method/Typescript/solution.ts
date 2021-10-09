@@ -18,7 +18,7 @@ export class Solution {
     console.log("Amount by Length of Name: ", this.getAmountByLengthOfName());
   }
 
-  private getAmountByLengthOfName() {
+  private getAmountByLengthOfName(): number {
     return this.amount * this.name.length;
   }
 }
