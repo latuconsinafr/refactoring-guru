@@ -11,7 +11,7 @@ class Solution
     {
     }
 
-    function printResult(): void
+    public function printResult(): void
     {
         $this->printHeader();
         $this->printDetails($this->getAmountByLengthOfName());
@@ -22,13 +22,13 @@ class Solution
         echo "The result is:\n";
     }
 
-    private function printDetails($amountByLengthOfName): void
+    private function printDetails(float $amountByLengthOfName): void
     {
         echo "Name: {$this->name}\n";
         echo "Amount by Length of Name: {$amountByLengthOfName}\n";
     }
 
-    private function getAmountByLengthOfName()
+    private function getAmountByLengthOfName() : float
     {
         return $this->amount * strlen($this->name);
     }

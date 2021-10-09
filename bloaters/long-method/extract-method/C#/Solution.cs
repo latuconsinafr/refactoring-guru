@@ -14,7 +14,7 @@ namespace CSharp
         public void PrintResult()
         {
             PrintHeader();
-            PrintDetails();
+            PrintDetails(GetAmountByLengthOfName());
         }
 
         private void PrintHeader()
@@ -22,10 +22,10 @@ namespace CSharp
             Console.WriteLine("The result is:");
         }
 
-        private void PrintDetails()
+        private void PrintDetails(double AmountByLengthOfName)
         {
             Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Amount by Length of Name: {GetAmountByLengthOfName()}");
+            Console.WriteLine($"Amount by Length of Name: {AmountByLengthOfName}");
         }
 
         private double GetAmountByLengthOfName()

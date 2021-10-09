@@ -11,12 +11,12 @@ class Problem
     {
     }
 
-    function printTotal(): void
+    public function printTotal(): void
     {
         echo "Total: {$this->calculateTotal()}\n";
     }
 
-    private function calculateTotal()
+    private function calculateTotal(): float
     {
         // Calculate Base Price
         $basePrice = $this->quantity * $this->itemPrice;

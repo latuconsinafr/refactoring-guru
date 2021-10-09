@@ -16,7 +16,7 @@ class Solution
         echo "Total: {$this->calculateTotal()}\n";
     }
 
-    private function calculateTotal()
+    private function calculateTotal(): float
     {
         if ($this->basePrice() > 1000)
             return $this->basePrice() * 0.95;
@@ -24,7 +24,7 @@ class Solution
             return $this->basePrice() * 0.98;
     }
 
-    private function basePrice()
+    private function basePrice(): float
     {
         return $this->quantity * $this->itemPrice;
     }

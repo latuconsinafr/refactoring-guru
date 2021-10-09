@@ -7,11 +7,11 @@ class App {
     let solution = new Solution();
 
     problem.quantity = 50;
-    problem.itemPrice = 20.00;
+    problem.itemPrice = 20.0;
     problem.printTotal();
 
     solution.quantity = 100;
-    solution.itemPrice = 15.00;
+    solution.itemPrice = 15.0;
     solution.printTotal();
   }
 }
